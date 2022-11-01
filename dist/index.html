@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script src = "main.js"></script>
+
+
+        <div id="wrapper">
+            <header>
+                <h1 id="title">Phone Book</h1>
+                
+                <form id="headFrm">    
+                    <div id="ss">                          
+                    <p class="pp">Кого ищем:</p>
+                    
+                    
+                    <input type="radio" id="searchBy1" name="name1">
+                    <label for="searchBy1">        Имя     </label>
+                    <input type="radio" id="searchBy2" name="name1">              
+                    <label for="searchBy2">         Телефон     </label>
+                    
+                        
+                   
+                </div>
+                    <input type="text" name="search" id="searchContact" placeholder="Ищем..."required></br></br>
+                </form>
+            </header>
+    
+            <main>
+                <h2>Добавить контакт</h2>
+                <form id="frm" name="info" >
+                    </br>
+                    <input  type="text" name="contactName" class="addContact" id="name" placeholder="Имя" ></br></br>
+                    <input  type="tel" name="contactNo"  class="addContact" id="phone" placeholder="Телефон" ></br></br>
+                    <input type="submit" value="Добавить" id="addCont" name="go">
+                    <p style="color:red;font-style:italic;font-size:25px;display: none;">Не хватает деталей</p>
+                </form>
+            </br>
+                <table id='contacts'>
+                    <thead>
+                        <tr>
+                            <th>Имя</th>
+                            <th>Телефон</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbdy">
+                        <tr id="contInfo" >
+                            
+                        </tr>
+    
+                    </tbody>
+    
+                </table>
+            </main>
+        </div>
+        <div id="popup">
+
+            <p>Пример номера телефона: "+7 927 ххх ххх"</p>
+            <button type="button" id="ok">OK</button>
+        </div>
+        <div id="confirm">
+                <p>Вы уверены, что хотите удалить этот контакт?</p>
+                <button type="button" id="yesbtn">Да</button>
+                <button type="button" id="nobtn">Нет</button>
+        </div>
+        <div id="existsup">
+            <p>Введенный вами номер телефона уже существует</p>
+            <button type="button" id="eok">OK</button>
+        </div>
+
+    </body>
+</html>
+
+
+
+
+
